@@ -13,7 +13,8 @@ body {
     padding: 0px;
     margin: 0px;
     min-height:100vh;
-    color:var(--white-color)
+    color:var(--white-color);
+    letter-spacing: 1.5px;
 }
 #header  #nav{
     padding: 0px;
@@ -50,8 +51,11 @@ body {
     display:inline-block;
     position:relative;
     top: 15px;
+    transition: transform 0.5s ease;
+}
 
-
+#nav #AddBook .btn1:hover {
+    transform: scale(1.1);
 }
 
 #content{
@@ -59,12 +63,25 @@ body {
 }
 
 
-#footer .footer-div{
+#footer .footer-div p{ 
     height: 50px;
     width:100%;
+    font-weight: lighter !important;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#footer .footer-div .github-link {
+    color: var(--secondary-color);
+    padding: 0 20px;
+    transition: transform 0.5s ease;
+}
 
+#footer .footer-div .github-link:hover{
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
 :root {
     --background-color: #3D3C3C ; 
     --primary-color: #6E8EFF;
